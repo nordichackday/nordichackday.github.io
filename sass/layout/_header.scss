@@ -1,0 +1,29 @@
+.header {
+  background-color: #00b8f1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 3rem;
+
+  &::after {
+    @include slope-horizontal-large(-1.5deg);
+  }
+}
+
+.header__content {
+  margin: 0 auto;
+  padding: 4rem 1rem 1rem 1rem;
+  max-width: $column-max-width;
+  text-align: left;
+}
+
+.header__logo {
+  margin-top: 0;
+}
+
+.header__logo-image {
+  max-width: 100%;
+}
+
+.header__tagline {
+  @include typography(20);
+}

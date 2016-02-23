@@ -1,0 +1,47 @@
+.footer {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px;
+  padding: 0;
+
+  ul {
+    margin: 5rem auto 1rem auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  li {
+    margin: 1rem;
+    display: inline-block;
+  }
+}
+
+.footer__logo {
+  background-image: url('../images/logo/sprites.png');
+  width: 275px;
+  height: 112px;
+
+  &--nord {
+    background-position: 0 -7px;
+  }
+  &--svt {
+    background-position: 0 -131px;
+  }
+
+  &--nrk {
+    background-position: 0 -235px;
+  }
+
+  &--yle {
+    background-position: 0 -354px;
+  }
+
+  &--dr {
+    background-position: 0 -472px;
+  }
+
+  &--ruv {
+    background-position: 0 -580px;
+  }
+}
+

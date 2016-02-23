@@ -1,0 +1,66 @@
+.section__instawrapper {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.instagram-feed {
+  -webkit-animation: fade-in-move-down .8s;
+  margin: 0 auto;
+  max-width: 1250px;
+  margin-bottom: 10rem;
+  padding: 1rem;
+  width: 100%;
+  @extend %clearfix;
+
+  img {
+    opacity: 0.8;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+}
+
+.instagram-post {
+  padding-top: 20px;
+  display: block;
+  font-family: $roboto-medium-italic;
+  @include typography(14);
+}
+
+.caption {
+  margin: 0;
+}
+
+// Instagram with two colums ** 450px+ **
+@media screen and (min-width: $breakpoint-two-colums) {
+  .instagram-post {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
+}
+
+// Instagram with four colums **901px+ **
+@media screen and (min-width: $breakpoint-four-colums) {
+  .instagram-post {
+    float: left;
+    width: 23.5%;
+
+    &:nth-child(n) {
+      margin-right: 2%;
+    }
+
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+}

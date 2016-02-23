@@ -1,0 +1,40 @@
+%clearfix {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+@mixin hide-text-true() {
+  white-space: nowrap;
+  text-indent: 1000%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+@mixin transform($transform-properties...) {
+  -webkit-transform: $transform-properties;
+  transform: $transform-properties;
+}
+
+// Horizontal ending of a block
+@mixin slope-horizontal-large($degrees) {
+  position: absolute;
+  background-color: inherit;
+  padding: 0;
+  bottom: -2rem;
+  content: '';
+  display: block;
+  z-index: -666;
+  width: 100%;
+  height: 5rem;
+  @include transform(skewY($degrees));
+}
+
+// Font-size
+$rembase: 16;
+$line-height: 24;
+
+@mixin typography($font-size: 16, $line-height-multiplier: 1) {
+  font-size: ($font-size * 1rem) / $rembase;
+  line-height: ($line-height * $line-height-multiplier) / $font-size;
+}

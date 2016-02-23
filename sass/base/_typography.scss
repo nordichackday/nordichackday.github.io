@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../font/Roboto-Bold-webfont.eot');
+  src: url('../font/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Bold-webfont.woff') format('woff'),
+  url('../font/Roboto-Bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../font/Roboto-Regular-webfont.eot');
+  src: url('../font/Roboto-Regular-webfont.eot#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Regular-webfont.woff') format('woff'),
+  url('../../font/Roboto-Regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto MeddiumItalic';
+  src: url('../font/Roboto-MediumItalic-webfont.eot');
+  src: url('../font/Roboto-MediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-MediumItalic-webfont.woff') format('woff'),
+  url('../font/Roboto-MediumItalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: $roboto-bold;
+  @include typography(36,1.5);
+}
+
+h3 {
+  font-family: $roboto-medium-italic;
+  @include typography(24);
+}
+
+@media screen and (min-width: $breakpoint-four-colums) {
+  h2 {
+    font-family: $roboto-bold;
+    @include typography(48, 2);
+  }
+
+  h3 {
+    font-family: $roboto-medium-italic;
+    @include typography(36, 1.5);
+  }
+}

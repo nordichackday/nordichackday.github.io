@@ -1,0 +1,18 @@
+// Base
+@import "base/normalize";
+@import "base/variables";
+@import "base/mixins";
+@import "base/animations";
+@import "base/icons";
+@import "base/base";
+@import "base/typography";
+
+// Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/section";
+
+// Modules
+@import "modules/instagram";
+@import "modules/flexslider";
+@import "modules/contact-list";

@@ -1,0 +1,13 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $roboto-regular;
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  background-color: $color-white;
+  animation: fade-in-move-down .8s;
+  -webkit-animation: fade-in-move-down .8s;
+  @include typography(18,1.2);
+}

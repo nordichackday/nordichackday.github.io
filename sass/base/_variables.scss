@@ -1,0 +1,24 @@
+// Colors
+$color-grey: #f4f4f4;
+$color-yellow: #ffaa4f;
+$color-red: #ff635c;
+$color-blue: #00d3e4;
+$color-white: #fff;
+$color-black: #222;
+
+// Base
+$base-font-color: $color-black;
+$base-font-size: 16;
+$column-max-width: 600px;
+
+// Fonts
+$roboto-regular: 'Roboto Regular', Verdana, Arial, sans-serif;
+$roboto-medium-italic: 'Roboto MeddiumItalic', Verdana, Arial, sans-serif;
+$roboto-bold: 'Roboto Bold', Verdana, Arial, sans-serif;
+
+// Breakpoints instagram
+$breakpoint-two-colums: 450 / $base-font-size + em;
+$breakpoint-four-colums: 901 / $base-font-size + em;
+
+// Breakpoints
+$breakpoint-large: 900/ $base-font-size + em;

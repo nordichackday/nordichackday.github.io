@@ -1,0 +1,29 @@
+.section {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::after {
+    @include slope-horizontal-large(1.5deg);
+  }
+
+  &--grey {
+    background-color: $color-grey;
+  }
+
+}
+
+.section__content {
+  max-width: 612px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  &--contact {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.instagram--wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
