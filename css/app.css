@@ -418,6 +418,20 @@ body {
   font-size: 1.125rem;
   line-height: 1.6; }
 
+table.agenda {
+  border: 1px solid #00A6A5; }
+  table.agenda thead th {
+    text-align: left;
+    padding: 10px;
+    color: white;
+    background: #00A6A5; }
+  table.agenda tbody tr td {
+    padding: 10px;
+    padding-right: 20px;
+    text-align: left; }
+  table.agenda tbody tr:nth-child(even) td {
+    background: #f4f4f4; }
+
 @font-face {
   font-family: 'Roboto Bold';
   src: url("../font/Roboto-Bold-webfont.eot");
@@ -563,7 +577,8 @@ h3 {
   margin: 0 auto;
   max-width: 1250px;
   margin-bottom: 10rem;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
   .instagram-feed img {
     opacity: 0.8;
     display: inline-block;
