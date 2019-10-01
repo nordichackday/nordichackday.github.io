@@ -29,8 +29,12 @@
 }
 
 a {
-  color: $color-blue;
+  color: $color-purple;
   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
 }
 
 h2 {

@@ -1,5 +1,8 @@
 .header {
-  background-color: $color-nhc-green;
+  /*background-color: $color-nhc-green;*/
+  background-image:url(../images/nordic-hackday-iceland.jpg);
+  background-repeat:none;
+  background-size:cover;
   text-align: center;
   position: relative;
   margin-bottom: 3rem;
@@ -14,6 +17,7 @@
   padding: 4rem 1rem 1rem 1rem;
   max-width: $column-max-width;
   text-align: left;
+  color:#FFF;
 }
 
 .header__logo {
